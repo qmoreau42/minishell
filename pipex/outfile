@@ -1,0 +1,13 @@
+/usr/bin/ls
+exec.c
+exec.o
+ft_libft.c
+ft_libft.o
+ft_split.c
+ft_split.o
+Makefile
+outfile
+pipex
+pipex.c
+pipex.h
+pipex.o
