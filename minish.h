@@ -6,7 +6,7 @@
 /*   By: gautier <gautier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 17:07:45 by jgautier          #+#    #+#             */
-/*   Updated: 2023/01/13 16:19:15 by qmoreau          ###   ########.fr       */
+/*   Updated: 2023/01/13 18:25:29 by qmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,13 @@ typedef struct s_token
 	char			*path;
 	char			**multi_path;
 	int				type_input;
-	int				*fd_input;
+	int				*fd_input;//fini par un -1
 	char			*file_input;
 	int				type_output;
 	int				fd_output;
 	char			*file_output;
 	int				heredoc;
-	char			*limiter;
+	char			**limiter;
 	int				error;
 	struct s_token	*next;
 }	t_tok;
